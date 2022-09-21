@@ -1,0 +1,23 @@
+- parte 1
+Comandos para o terminal:
+php -a
+php > echo "Olá mundo";
+php > quit (não é uma instrução php, por isso não usa o ';')
+
+
+- parte 2
+
+* (Usar PhpStorm ou outro editor de texto)
+
+inicio do arquivo precisa ter '<?php' para identificar que é um arquivo php
+
+<?php echo "Olá mundo";
+
+ou 
+
+<?php 
+echo "Olá mundo";
+
+* (Compilando no terminal)
+
+php [nome do arquivo].
