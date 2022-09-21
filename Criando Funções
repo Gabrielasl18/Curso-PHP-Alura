@@ -32,3 +32,5 @@ if(500 > $contasCorrentes['123.456.189-19']['saldo']) {
 foreach($contasCorrentes as $cpf => $conta) {
   echo $cpf . "\t> " . $conta['titular'] . ' ' . $conta['saldo'] . PHP_EOL;
 }
+
+// Diferença entre funções e subrotinas -> Subrotinas executam uma tarefa, mas não relatam nada ao programa de chamada, já função normalmente realiza alguns cálculos e relata o resultado ao chamador.
