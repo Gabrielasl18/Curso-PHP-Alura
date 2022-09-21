@@ -1,0 +1,33 @@
+- desafio 1:
+
+* Ímpares de 0 até 100:
+
+<?php 
+$contador = 0;
+while($contador <= 100) {
+  if($contador % 2 != 0){
+    echo "impar: $contador\n";
+  }
+  $contador++;
+}
+
+- desafio 2:
+
+* Tabuada:
+
+<?php 
+for($i = 0; $i <= 10; $i++) {
+  for($j = 0; $j <= 10; $j++) {
+    echo "$i x $j = " . $i*$j . "\n";  
+  }
+  echo "\n";
+}
+
+- desafio 3:
+
+* IMC:
+
+<?php 
+$IMC = 0; $peso = 57; $altura = 1.57;
+$IMC = ($peso/($altura**2));
+echo "$IMC\n";
