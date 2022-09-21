@@ -1,0 +1,16 @@
+- parte 1:
+
+<?php 
+$idade = 19;
+echo 'Olá mundo! Minha idade é '. $idade . ' anos';
+
+echo 'Olá! meu nome é ' . $nome . 'Meu emailé ' . $email . 'Tenho ' . $idade . ' anos';
+(frase que era pra ser pequena, ficou grande)
+
+echo "Olá mundo! Minha idade é $idade anos";
+
+- parte 2:
+
+caracter que geralmente os arquivos do windows usa -> \r\n
+
+pular linha \n ou \v ou PHP.EOL
