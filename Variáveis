@@ -1,0 +1,23 @@
+- parte 1:
+
+<?php
+ $idade = 19; (cifrão indica que é variável)
+ echo $idade;
+ 
+ - parte 2:
+ 
+ <?php
+ 
+ $idade = 21;
+ $idadeDaqui10Anos = $idade + 10;
+ $doisAoCubo = 2 ** 3;
+ 
+ echo $idadeDaqui10Anos;
+ echo $doisAoCubo;
+ 
+ - parte 3:
+ 
+$idade = 19;
+$salario = 1000.30 (números quebrados = números de ponto flutuante, ou seja, número decimal)
+
+echo gettype($idade); (descobrir o tipo da variável)
