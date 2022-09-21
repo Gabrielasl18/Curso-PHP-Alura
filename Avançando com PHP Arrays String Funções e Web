@@ -1,6 +1,6 @@
-- parte 1:
+- parte 1 - Arrays associativos: 
 
-* Arrays associativos:
+* Várias informações:
 
 <?php
 $conta1 = [
@@ -21,4 +21,51 @@ $contasCorrentes = [$conta1, $conta2, $conta3];
 for($i = 0; $i < count($contasCorrentes); $i++) {
 echo $contasCorrentes[$i]['titular'] . "\n";
   
+}
+
+* Foreach:
+
+<?php
+$contasCorrentes = [
+  12345618919 => $conta1 = [
+  'titular' => 'Gabriela',
+  'saldo' => 1000
+],
+  12345638913 => $conta2 = [
+  'titular' => 'Maria',
+  'saldo' => 10000
+],
+  12345608912 => $conta3 = [
+  'titular' => 'Alberto',
+  'saldo' => 300
+]
+]; /*Com looping 'for' nao conseguiríamos, pois não saberíamos o CPF de todos os clientes. cpf = índice*/
+
+foreach($contasCorrentes as $cpf => $conta) {
+  echo $cpf . PHP_EOL;
+}
+
+* Adicionando dados:
+
+<?php
+$contasCorrentes = [
+  '123.456.189-19' => $conta1 = [
+  'titular' => 'Gabriela',
+  'saldo' => 1000
+],
+  '123.456.389-13' => $conta2 = [
+  'titular' => 'Maria',
+  'saldo' => 10000
+],
+  '123.456.089-12' => $conta3 = [
+  'titular' => 'Alberto',
+  'saldo' => 300
+]
+]; /*Com looping 'for' nao conseguiríamos, pois não saberíamos o CPF de todos os clientes. cpf = índice*/
+$contasCorrentes['123.456.790-10'] = [
+    'titular' => 'Claudia',
+    'saldo' => 2000
+];
+foreach($contasCorrentes as $cpf => $conta) {
+  echo $cpf . "\t> " . $conta['titular'] . PHP_EOL;
 }
